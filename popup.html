@@ -1,1 +1,24 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><style>body{font:14px system-ui;width:310px;margin:0;padding:16px;color:#171717}h1{font-size:16px;margin:0 0 12px}.ok{color:#16803a}.bad{color:#b42318}.muted{color:#666;font-size:12px;line-height:1.5}a{color:#1463d6;word-break:break-all}.actions{display:flex;gap:8px;margin-top:14px}button{border:0;border-radius:8px;padding:8px 11px;cursor:pointer}#settings{background:#171717;color:#fff}</style><h1>X → 币安广场自动同步</h1><div id="status">读取状态…</div><div class="actions"><button id="settings">设置</button><button id="retry">立即重试</button></div><p class="muted">密钥仅保存在本机浏览器。首次发推会自动绑定当前 X 账号。</p><script src="popup.js"></script></html>
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<style>
+  body{font:14px system-ui;width:340px;margin:0;padding:16px;color:#171717}
+  h1{font-size:16px;margin:0 0 12px}
+  .ok{color:#16803a;font-weight:600}
+  .bad{color:#b42318;font-weight:600}
+  .muted{color:#666;font-size:12px;line-height:1.55}
+  a{color:#1463d6;word-break:break-all}
+  .actions{display:flex;gap:8px;margin-top:14px}
+  button{border:0;border-radius:8px;padding:8px 11px;cursor:pointer}
+  button:disabled{opacity:.6;cursor:wait}
+  #settings{background:#171717;color:#fff}
+  .rejected-title{margin-top:14px;padding-top:12px;border-top:1px solid #eee;color:#b42318;font-size:12px;font-weight:700}
+  .rejected-item{margin-top:8px;padding:9px;background:#fff4f2;border:1px solid #ffd5cf;border-radius:8px;color:#6b2720;font-size:11px;line-height:1.5;word-break:break-word}
+  .excerpt{color:#666}
+</style>
+<h1>X → 币安广场自动同步</h1>
+<div id="status">读取状态…</div>
+<div class="actions"><button id="settings">设置</button><button id="retry">立即重试</button></div>
+<p class="muted">红色角标表示存在被拒绝的内容。点击插件可查看错误码、拒绝原因和推文摘要。</p>
+<script src="popup.js"></script>
+</html>

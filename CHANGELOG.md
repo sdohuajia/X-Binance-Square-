@@ -1,5 +1,28 @@
 # Changelog
 
+## 1.2.4 — 2026-07-19
+
+- When manually retrying rejected posts that contain links, asks for confirmation first.
+- After confirmation, removes URLs and publishes only the remaining text.
+- Shows how many rejected posts had their links removed and were resubmitted.
+- Keeps the original captured text in local history; the sanitized text is used only for the retry request.
+
+## 1.2.3 — 2026-07-19
+
+- Displays an explicit “rejected by Binance” state for permanent publishing failures.
+- Shows the Binance error code, rejection reason, timestamp, and a short post excerpt in the popup.
+- Keeps the three most recent rejected records visible in the popup.
+- Uses a red extension badge when blocked/rejected posts exist; orange remains reserved for retryable items.
+- Escapes all remote error text before rendering it in the popup.
+
+## 1.2.2 — 2026-07-19
+
+- Preserves ordinary user links on the first Binance Square publishing attempt.
+- If Binance explicitly rejects a URL with risk-control code `20041`, removes URLs and retries the same post once automatically.
+- Shows a success note when links were removed by the fallback.
+- Manual “retry now” can retry previously blocked queue items after an upgrade.
+- Includes Binance error codes in status messages for easier diagnosis.
+
 ## 1.2.1 — 2026-07-19
 
 - Replaced the generic extension icon with the supplied yellow Binance mascot artwork.

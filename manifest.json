@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "X → Binance Square Auto Sync",
-  "version": "1.2.1",
+  "version": "1.2.4",
   "description": "Automatically mirrors your successful original and quote X posts to Binance Square using your own Square OpenAPI key.",
   "permissions": [
     "storage",
